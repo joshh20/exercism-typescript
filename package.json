@@ -1,0 +1,15 @@
+{
+    "name": "exercism-typescript",
+    "version": "1.0.0",
+    "description": "TypeScript exercises from https://exercism.org/tracks/typescript/exercises",
+    "main": "index.ts",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "tsx": "^4.8.2",
+        "typescript": "^5.4.5"
+    }
+}
