@@ -1,4 +1,4 @@
-class DnDCharacter {
+export class DnDCharacter {
     strength: number;
     dexterity: number;
     constitution: number;
@@ -37,5 +37,3 @@ class DnDCharacter {
 
 // const char1 = new DnDCharacter();
 // console.log(char1);
-
-console.log(DnDCharacter.getModifierFor(5));
