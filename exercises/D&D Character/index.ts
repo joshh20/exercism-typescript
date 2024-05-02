@@ -20,14 +20,12 @@ export class DnDCharacter {
     public static generateAbilityScore(): number {
         let dice: number[] = [];
         for (let i = 0; i < 4; i++) {
-            const number = Math.floor(Math.random() * 6 + 1);
-            dice.push(number);
+            dice.push(Math.floor(Math.random() * 6 + 1));
         }
-        dice.sort((a, b) => b - a);
-        return dice.reduce((total, number, index) => {
-            if (index <= 2) return total + number;
-            return total;
-        }, 0);
+        return dice
+            .sort((a, b) => b - a)
+            .slice(-3)
+            .reduce((total, number) => total + number, 0);
     }
 
     public static getModifierFor(abilityValue: number): number {
